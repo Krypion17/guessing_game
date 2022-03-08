@@ -23,6 +23,11 @@ fn main() {
                 continue;
             }
         };
+        
+        if guess < 1 || guess > 10 {
+            println!("Enter a number between 1 and 10");
+            continue;
+        }
 
         println!("You guessed: {}", guess);
 
